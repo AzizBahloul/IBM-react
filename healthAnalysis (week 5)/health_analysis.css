@@ -1,0 +1,138 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    }
+    
+    nav {
+    background-color: #0D5C75;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    }
+    
+    nav h1 {
+    flex-basis: 100%;
+    order: -1;
+    }
+    
+    nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    nav li {
+    flex-grow: 1;
+    flex-basis: calc(33.33% - 1rem);
+    margin: 0.5rem;
+    }
+    
+    nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    }
+    
+    nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    nav input[type="text"] {
+    flex-grow: 1;
+    flex-basis: calc(66.66% - 1rem);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    }
+    
+    nav button {
+    flex-grow: 1;
+    flex-basis: calc(33.33% - 1rem);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0E7B96;
+    color: white;
+    cursor: pointer;
+    }
+    
+    nav button:hover {
+    background-color: #118AB2;
+    }
+    
+    /******************************
+    
+    Form & Search Condition Styles *
+    ******************************/
+    .analysisForm,
+    .searchCondition {
+    float: left;
+    width: 100%;
+    margin-bottom: 2rem;
+    }
+    
+    .analysisForm > div,
+    .searchCondition > div {
+    margin-bottom: 1rem;
+    }
+    
+    .analysisForm label,
+    .searchCondition label {
+    display: inline-block;
+    margin-right: 1rem;
+    }
+    
+    .analysisForm input[type="text"],
+    .analysisForm input[type="number"],
+    .analysisForm select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    
+    .analysisForm input[type="radio"] {
+    margin-right: 0.5rem;
+    }
+    
+    .analysisForm button#addPatient {
+    background-color: #0D5C75;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+    .analysisForm button#addPatient:hover {
+    background-color: #118AB2;
+    }
+    
+    .searchCondition {
+    display: none; /* hide initially */
+    }
+    
+    #result {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+    }
+    
+    /* Added code below */
+    
+    body {
+    background-image: url("wave.png"), linear-gradient(to bottom right, #00bcd4, #1de9b6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
